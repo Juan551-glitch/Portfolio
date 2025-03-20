@@ -3,49 +3,173 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Juan's Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <h1>Welcome to My Portfolio</h1>
-        <nav>
-            <ul>
+        <nav class="navbar">
+            <div class="logo">Juan's Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            <button id="theme-toggle" class="theme-toggle">🌙</button>
         </nav>
     </header>
+    
+    <!-- Home Section -->
+    <section id="home" class="section home">
+        <div class="home-container">
+            <!-- Content Area -->
+            <div class="home-content">
+                <h1>Hi, I'm <span>Juan</span></h1>
+                <p>Aspiring Software Engineer | Innovating One Line of Code at a Time</p>
+                <button onclick="location.href='#projects'" class="cta">Explore My Work</button>
+            </div>
+        </div>
+    </section>
+    
 
-    <main>
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Insert a brief introduction about yourself here.</p>
-        </section>
-        <section id="projects">
-            <h2>Projects</h2>
-            <p>Showcase your favorite projects here.</p>
-        </section>
-        <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-                
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" rows="4"></textarea>
-                
-                <button type="submit">Send</button>
-            </form>
-        </section>
-    </main>
+    <!-- About Section -->
+    <section id="about" class="section about">
+        <div class="about-container">
+            <!-- Left Side: Content -->
+            <div class="about-content">
+                <h2><span style="color: #187ae1;">About</span>  Me</h2>
+                <p>Hello! I'm Juan, a software engineering student passionate about creating innovative solutions for a smarter, more connected world. From designing sleek web interfaces to exploring smart home technologies, I love transforming ideas into reality.</p>
+                <p>With a strong foundation in web development and a growing expertise in system design, I aim to build tools and experiences that make life easier and more enjoyable. Currently, I’m honing my skills in responsive design, interactive features, and software testing.</p>
+                <p>Let’s connect and collaborate to bring exciting projects to life!</p>
+            </div>
+    
+            <!-- Right Side: Image -->
+            <div class="about-image">
+                <img src="arma3.png" alt="Juan's Photo">
+            </div>
+        </div>
+    </section>
+    
 
-    <footer>
-        <p>&copy; 2025 Juan's Portfolio. All rights reserved.</p>
+    <!-- Skills Section -->
+    <section id="skills" class="section skills">
+        <h2>My <span style="color: #187ae1;"> Skills</span> </h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <img src="html-icon.png" alt="HTML Icon">
+                <h3>HTML</h3>
+                <p>Proficient in creating structured web pages using HTML, with a strong understanding of semantic elements and accessibility standards to ensure user-friendly and organized designs.</p>
+            </div>
+            <div class="skill-card">
+                <img src="css-icon.png" alt="CSS Icon">
+                <h3>CSS</h3>
+                <p>Skilled in crafting visually appealing and responsive web designs using CSS. Experienced in utilizing advanced styling techniques like animations, transitions, and grid layouts to enhance user experiences.</p>
+            </div>
+            <div class="skill-card">
+                <img src="javascript-icon.png" alt="JavaScript Icon">
+                <h3>JavaScript</h3>
+                <p>Capable of building dynamic and interactive web applications by leveraging JavaScript. Adept at integrating functionalities like navigation menus, contact forms, and other interactive elements into projects.</p>
+            </div>
+            <div class="skill-card">
+                <img src="python-icon.png" alt="Git Icon">
+                <h3>Python</h3>
+                <p>Experienced in using Python for scripting, automation, and back-end development. Familiar with frameworks like Flask or Django, enabling efficient and scalable application development.</p>
+            </div>
+            <div class="skill-card">
+                <img src="delphi-icon.png" alt="Delphi Icon">
+                <h3>Delphi</h3>
+                <p>Knowledgeable in object-oriented programming with Delphi, specializing in creating robust desktop applications and integrating database functionalities seamlessly.</p>
+            </div>
+            <div class="skill-card">
+                <img src="DP-900-icon.png" alt="DP-900 Icon">
+                <h3>DP-900</h3>
+                <p>Certified in Microsoft Azure Data Fundamentals (DP-900), showcasing a strong understanding of core data concepts, cloud data services, and relational database management systems.</p>
+            </div>
+            <div class="skill-card">
+                <img src="php-icon.png" alt="PHP Icon">
+                <h3>PHP</h3>
+                <p>Proficient in server-side scripting with PHP, skilled at developing dynamic web applications and managing integrations with databases to deliver powerful and scalable solutions.</p>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects">
+        <h2>My<span style="color: #187ae1;"> Projects</span></h2>
+        <div class="slideshow-container">
+            <!-- Project 1 -->
+            <div class="slide">
+                <img src="project-portfolio.png" alt="Project 1">
+                <h3>Portfolio Website</h3>
+                <p>A responsive portfolio showcasing my skills and projects.</p>
+            </div>
+            <!-- Project 2 -->
+            <div class="slide">
+                <img src="RealHome.png" alt="Project 2">
+                <h3>Real Home Website</h3>
+                <p>Developed a realestate website where clients can find their dream home or even sell their own</p>
+            </div>
+            <!-- Project 3 -->
+            <div class="slide">
+                <img src="CTU-Buddy.png" alt="Project 2">
+                <h3>CTU-Buddy</h3>
+                <p>Developed a website that allows for university studetns to have a website where they can be connected at all times</p>
+            </div>
+            <!-- Add more slides as needed -->
+    
+            <!-- Navigation Buttons -->
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
+        </div>
+    </section>
+    
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <h2><span style="color: #187ae1;">Contact</span> Me</h2>
+        <div class="contact-container">
+            <!-- Left Side: Details -->
+            <div class="contact-info">
+                <img src="arma3.png" alt="Juan's Photo" class="profile-photo">
+                <h3>Let's Connect!</h3>
+                <p>Email: juanlouw209@gmail.com</p>
+                <p>Phone: 082 737 8886</p>
+                <p>Available for collaborations and opportunities!</p>
+            </div>
+    
+            <!-- Right Side: Contact Form -->
+            <div class="contact-form">
+                <form>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Your Name" required>
+    
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Your Email" required>
+    
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+    
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2025 Juan's Portfolio</p>
+            <div class="social-icons">
+                <a href="https://github.com/Juan551-glitch" target="_blank"><img src="Github-logo.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/feed/" target="_blank"><img src="linkedin-logo.png" alt="LinkedIn"></a>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
